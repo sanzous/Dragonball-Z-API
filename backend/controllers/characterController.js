@@ -1,5 +1,7 @@
 const asyncHandler = require('express-async-handler')
 
+const Character = require('../models/characterModel')
+
 
 //Get characters
 // GET /api/characters
