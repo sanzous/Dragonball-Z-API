@@ -16,11 +16,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 
-app.get('/', (request, response) => {
-    response.sendFile('index.html')
-})
 
-app.use('/api/character', require('./routes/characterRoutes'))
+
+app.use('/api/goals', require('./routes/goalRoutes'))
 
 app.use(errorHandler)
 

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const characterSchema = mongoose.Schema({
+const goalSchema = mongoose.Schema({
     text: {
         type: String,
         required: [true, 'Text required']
@@ -10,4 +10,4 @@ const characterSchema = mongoose.Schema({
 }
 )
 
-module.exports = mongoose.model('Character', characterSchema)
+module.exports = mongoose.model('Goals', goalSchema)
