@@ -1,18 +1,18 @@
-# Dragonball Z API 
+# Goal Setting Application
 
-This project is to create a database/api that will serve up information on any Dragonball Z character requested.
+This app allows user to create an account and then set goals that they can track and delete.
 
 
 # How It's Made:
 
 
-Tech used: Node.js, Express.js , Heroku
+Tech used: React.js, Node.js, Express.js , MongoDB, Heroku
 
 # Optimizations:
 
-Add more characters to the database. Add HTML/CSS pages for styling and design.
+Fix a logout bug, add more functionality to the app and add the ability to share goals.
 
 
 # Lessons Learned:
 
-This project was to solidify my understanding of Node.js, Express.js and how API's are used in web applications.
+This project was to solidify my understanding of the MERN stack and authorization using JSON web tokens.
