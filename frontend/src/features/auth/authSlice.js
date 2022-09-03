@@ -5,11 +5,11 @@ import authService from './authService'
 const user = JSON.parse(localStorage.getItem('user'))
 
 const initialState = {
-    user: user,
+    user: user ? user : null,
     isError: false,
     isSuccess: false,
     isLoading: false,
-    message: ''
+    message: '',
 }
 
 //Register user
@@ -52,10 +52,10 @@ export const authSlice = createSlice({
     reducers: {
         reset: (state) => {
             state.isLoading = false
-            state.isError = false
             state.isSuccess = false
+            state.isError = false
             state.message = ''
-        }
+        },
     },
     extraReducers: (builder) => {
         builder
@@ -92,6 +92,7 @@ export const authSlice = createSlice({
             })
     },
 })
+
 
 
 export const { reset } = authSlice.actions

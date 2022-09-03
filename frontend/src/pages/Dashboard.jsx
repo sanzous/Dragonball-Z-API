@@ -20,20 +20,26 @@ function Dashboard() {
         if (isError) {
             console.log(message)
         }
+
         if (!user) {
             navigate('/login')
         }
-
         dispatch(getGoals())
 
-        return () => {
-            dispatch(reset())
-        }
+
+
     }, [user, navigate, isError, message, dispatch])
+
+    useEffect(() => {
+        return () => dispatch(reset());
+    }, [dispatch]);
 
     if (isLoading) {
         return <Spinner />
     }
+
+
+
 
 
     return (
